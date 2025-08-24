@@ -31,7 +31,7 @@ Siga as instruções abaixo para rodar o projeto em seu ambiente local.
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/seu-usuario/xeque_store_project.git](https://github.com/seu-usuario/xeque_store_project.git)
+git clone https://github.com/Lucas-c-santos2/xeque_store_project/edit/main/README.md
 cd xeque_store_project
 ```
 
