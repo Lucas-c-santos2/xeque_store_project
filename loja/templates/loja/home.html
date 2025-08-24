@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xeque-Store - Artigos de Xadrez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'loja/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="store-header">
+        <h1>Xeque-Store</h1>
+        <p>A arte do xadrez ao seu alcance.</p>
+    </header>
+
+    <main class="container">
+        <section id="sobre" class="section-container">
+            <h2>Nossa Paixão, Sua Jogada</h2>
+            <p>Na Xeque-Store, unimos a tradição e a elegância do xadrez com a modernidade. Nossa curadoria rigorosa garante que você encontre apenas produtos de alta qualidade, desde tabuleiros artesanais a relógios de precisão, para aprimorar cada partida.</p>
+        </section>
+
+        <section id="destaque" class="text-center mb-5">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1580541832626-2a7131ee809f?q=80&w=1770&auto=format&fit=crop" class="hero-image" alt="Tabuleiro de xadrez com peças posicionadas">
+            </div>
+        </section>
+
+        <section id="acao-principal" class="text-center mb-5">
+             <a href="{% url 'colecoes' %}" class="btn action-btn">Ver Coleção Completa</a>
+        </section>
+
+        <section id="porque-escolher" class="section-container">
+            <h2>Por que Escolher a Xeque-Store?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <h3>Curadoria Especializada</h3>
+                        <p>Cada item em nosso catálogo é selecionado por enxadristas experientes, garantindo qualidade e funcionalidade.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <h3>Entrega Rápida e Segura</h3>
+                        <p>Receba seus produtos com agilidade e segurança em qualquer lugar do Brasil. Embalagens reforçadas para proteger seu investimento.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <h3>Suporte Apaixonado</h3>
+                        <p>Nossa equipe é formada por amantes do xadrez. Estamos prontos para ajudar você a escolher o produto ideal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="products-section">
+            <h2>Nossos Destaques</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="product-item">
+                        <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?q=80&w=1770&auto=format&fit=crop" alt="Tabuleiro de Ébano Profissional" class="product-item__image">
+                        <div class="product-item__details">
+                            <h3>Tabuleiro de Ébano Profissional</h3>
+                            <p>Feito à mão com madeira de ébano e bordo, ideal para competições oficiais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-item">
+                        <img src="https://m.media-amazon.com/images/I/71M6VAAGjYL.jpg" alt="Peças de Xadrez Staunton Clássico" class="product-item__image">
+                        <div class="product-item__details">
+                            <h3>Peças Staunton Clássico</h3>
+                            <p>Conjunto de peças ponderadas com feltro na base para um deslize suave.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-item">
+                        <img src="https://images.tcdn.com.br/img/img_prod/1006597/dgt_3000_limited_edition_5437_1_a68a8dc6094b50098180eade465a1051.jpg" alt="Relógio Digital DGT 3000" class="product-item__image">
+                        <div class="product-item__details">
+                            <h3>Relógio Digital DGT 3000</h3>
+                            <p>O relógio de xadrez oficial da FIDE, com múltiplos modos de tempo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="{% url 'produtos' %}" class="btn action-btn">Ver Todos os Produtos</a>
+                <a href="{% url 'kits' %}" class="btn action-btn" style="background-color: #A0A0A0;">Kits para Iniciantes</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Desenvolvido por Lucas de Carvalho dos Santos</p>
+    </footer>
+
+</body>
+</html>

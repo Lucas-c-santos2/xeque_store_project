@@ -1,0 +1,27 @@
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+
+# Banco de dados
+db.sqlite3
+
+# Arquivos de configuração de IDEs
+.idea/
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Arquivos de ambiente (para variáveis sensíveis)
+.env
+
+# Diretório de arquivos estáticos coletados
+staticfiles/
+
+# Diretório de arquivos de mídia
+mediafiles/
