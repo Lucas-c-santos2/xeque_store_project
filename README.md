@@ -51,7 +51,7 @@ source venv/bin/activate
 pip install Django
 ```
 
-**4. Execute as migrações (opcional para este projeto estático):**
+**4. Execute as migrações (opcional para este projeto):**
 ```bash
 python manage.py migrate
 ```
